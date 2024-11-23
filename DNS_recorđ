@@ -1,0 +1,28 @@
+1. Import dns.resolver library:
+This is dnspython's dns.resolver library used to perform DNS queries. This library allows you to query and retrieve information about a domain's DNS records.
+
+2. Create a dictionary to store DNS information:
+Create an empty dictionary named dns_record. This will be where the DNS records that the program collects from the domain name are stored.
+
+3. Enter domain name from user:
+The program requires users to enter the domain name of a website (for example: example.com). The results will be saved in the website variable.
+
+4. Query 'A' record (Address record):
+dns.resolver.resolve(website, 'A'): Use dns.resolver's resolve function to perform a DNS query for the A record (address record) of the website. The A record contains the IP addresses of the web server.
+a_record_list: A list is created to store all the IPs returned by record A.
+for ipval in a_record: Iterate through all return values ​​of record A.
+
+    ipval.to_text(): Convert IP object to text (string).
+    Then add the IP address to the a_record_list list.
+
+Finally, the list of IPs is saved to the dns_record dictionary under the key 'A_Records'.
+
+5. Query 'MX' record (Mail Exchange record):
+mx_record = dns.resolver.resolve(website, 'MX'): Perform a DNS query to get the website's MX (Mail Exchange) record. MX records indicate which server handles email for the domain.
+mx_record_list: A list created to store MX records.
+for i, server in enumerate(mx_record): Browse through the returned MX servers.
+
+    f"MX_Record_{i+1}: {server.exchange.to_text()}": Creates a text string containing information about the MX record, including the record number and the email server (server.exchange).
+    Add this string to the mx_record_list.
+
+Finally, the list of MX records is saved to the dns_record dictionary under the key 'MX_Records'.
