@@ -1,0 +1,26 @@
+{
+  "dns_settings": {
+    "timeout": 10,
+    "retries": 3,
+    "default_nameserver": null,
+    "record_types": ["A", "AAAA", "CNAME", "MX", "NS", "TXT", "SOA"]
+  },
+  "display_settings": {
+    "use_colors": true,
+    "max_txt_length": 70,
+    "table_format": true,
+    "show_progress": true
+  },
+  "export_settings": {
+    "json_indent": 2,
+    "csv_delimiter": ",",
+    "include_timestamp": true
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "dns_lookup.log",
+    "max_size_mb": 10,
+    "backup_count": 3,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}

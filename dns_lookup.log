@@ -1,0 +1,8 @@
+2025-08-21 02:14:32,332 - dns_lookup - INFO - Successfully fetched 1 A records for google.com
+2025-08-21 02:14:32,339 - dns_lookup - INFO - Successfully fetched 1 AAAA records for google.com
+2025-08-21 02:14:32,345 - dns_lookup - INFO - No CNAME records found for google.com
+2025-08-21 02:14:32,372 - dns_lookup - INFO - Successfully fetched 1 MX records for google.com
+2025-08-21 02:14:32,379 - dns_lookup - INFO - Successfully fetched 4 NS records for google.com
+2025-08-21 02:14:32,440 - dns_lookup - INFO - Successfully fetched 12 TXT records for google.com
+2025-08-21 02:14:32,449 - dns_lookup - INFO - Successfully fetched 1 SOA records for google.com
+2025-08-21 02:14:32,449 - dns_lookup - INFO - DNS lookup completed for google.com
