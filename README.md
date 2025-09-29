@@ -1,4 +1,4 @@
-# 🌐 Enhanced DNS Record Lookup Tool
+# 🌐 DNS Record Lookup Tool
 
 A comprehensive, professional-grade DNS lookup tool with modern features, beautiful output formatting, and robust error handling.
 
